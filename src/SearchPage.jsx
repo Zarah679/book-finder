@@ -39,7 +39,7 @@ const SearchPage = ({ bookmarks, onToggleBookmark }) => {
       const res = await fetch(
         `https://www.googleapis.com/books/v1/volumes?q=${encodeURIComponent(
           query
-        )}&maxResults=12&key=${API_KEY}`
+        )}&maxResults=12`
       );
 
       if (!res.ok) throw new Error("Failed to fetch books");
